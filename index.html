@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <script src ="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1>My Library</h1>
+</header>
+<body>
+    <div class="add-button-container">
+        <button class = "add-button">Add Book</button>
+    </div>
+    
+    <div class = 'modal-container' id = 'modal-container'>
+        <div class ='modal'>
+            <h2>Add a new book</h2>
+            <label>Title</label><br>
+            <input type = 'text' id = 'title'> <br>
+            <label>Author</label><br>
+            <input type = 'text' id = 'author'> <br>
+            <label>Pages</label><br>
+            <input type = 'number' id = 'pages'> <br>
+            <label >Status</label>
+                <select id = 'status'>
+                    <option> Read </option>
+                    <option> Not Read </option>
+                </select>
+            <button id = 'submit'>Submit</button><br>
+            <button id = 'close'>Close</button>
+        </div>
+    </div>
+
+    <div id = 'book-list'>
+
+    </div>
+    
+</body>
+</html>
